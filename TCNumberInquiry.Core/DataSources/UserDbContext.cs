@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TCNumberInquiry.Core.Entitiy;
+using TCNumberInquiry.Core.Entities;
 
 namespace TCNumberInquiry.Core.DataSources
 {

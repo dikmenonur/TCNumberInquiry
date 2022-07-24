@@ -607,7 +607,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
+          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
+          "Newtonsoft.Json": "13.0.1",
+          "TCNumberInquiry.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/TCNumberInquiry.Module.dll": {}

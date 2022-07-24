@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using KPSPublicServices;
 
-namespace TCNumberInquiry.Core.Entitiy
+namespace TCNumberInquiry.Core.Entities
 {
     public class IdentificationNumberResponse : TCKimlikNoDogrulaResponse
     {

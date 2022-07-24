@@ -3,40 +3,58 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Distributed;
+using TCNumberInquiry.Core.DataSources;
 using TCNumberInquiry.Module.Model;
 
 namespace TCNumberInquiry.Module.Manager
 {
     public class UserManagers : IUserManagers
     {
-        public UserManagers()
+        private readonly IDistributedCache _distributedCache;
+        private readonly IUserDataSource _userDataSource;
+        public UserManagers(IDistributedCache distributedCache, IUserDataSource userDataSource)
         {
-
+            this._distributedCache = distributedCache;
+            this._userDataSource = userDataSource;
         }
 
-        public Task<User> GetUserById(long userId)
+        public async Task<User> GetUserById(long userId)
         {
-            throw new NotImplementedException();
+            var userModel = await this._userDataSource.GetByUsersId(userId);
+            User user = new User(userModel.Id, userModel.IdentyNumber, userModel.FirstName, userModel.LastName, userModel.BirthDate);
+            return user;
         }
 
-        public Task<List<User>> GetAllUsers()
+        public async Task<List<User>> GetAllUsers()
         {
-            throw new NotImplementedException();
+            var userModel = await this._userDataSource.GetAllUsers();
+            List<User> userList = new List<User>();
+            foreach (var uModel in userModel)
+            {
+                User user = new User(uModel.Id, uModel.IdentyNumber, uModel.FirstName, uModel.LastName, uModel.BirthDate);
+                userList.Add(user);
+            }
+
+            return userList;
         }
 
-        public Task<long> InsertUser(User user)
+        public async Task<long> InsertUser(User user)
         {
-            throw new NotImplementedException();
+            var userModel = await this._userDataSource.InsertUsers(user.GetUsers());
+            return userModel;
         }
 
-        public Task<long> DeleteUser(long userId)
+        public async Task<long> DeleteUser(long userId)
         {
-            throw new NotImplementedException();
+            var userModel = await this._userDataSource.DeleteUsers(userId);
+            return userModel;
         }
 
-        public Task<long> UpdateUser(User user)
+        public async Task<long> UpdateUser(User user)
         {
-            throw new NotImplementedException();
+            var userModel = await this._userDataSource.UpdateUsers(user.GetUsers());
+            return userModel;
         }
     }
 }

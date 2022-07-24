@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using KPSPublicServices;
-using TCNumberInquiry.Core.Entitiy;
+using TCNumberInquiry.Core.Entities;
 using KpsRepository = KPSPublicServices.KPSPublicSoap;
 
 namespace TCNumberInquiry.Core.DataSources

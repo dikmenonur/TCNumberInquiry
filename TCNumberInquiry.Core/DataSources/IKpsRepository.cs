@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using TCNumberInquiry.Core.Entitiy;
+using TCNumberInquiry.Core.Entities;
 
 namespace TCNumberInquiry.Core.DataSources
 {

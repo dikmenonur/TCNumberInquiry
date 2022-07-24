@@ -206,7 +206,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Onur Dikmen\\source\\repos\\TCNumberInquiry.API\\TCNumberInquiry.Core\\TCNumberInquiry.Core.csproj": {
+                "projectPath": "C:\\Users\\Onur Dikmen\\source\\repos\\TCNumberInquiry.API\\TCNumberInquiry.Core\\TCNumberInquiry.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -219,6 +223,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using TCNumberInquiry.Core.Entitiy;
+using TCNumberInquiry.Core.Entities;
 
 namespace TCNumberInquiry.Core.DataSources
 {
@@ -17,7 +17,7 @@ namespace TCNumberInquiry.Core.DataSources
             this.UserDbContent = userDbContent;
         }
 
-        public async Task<Users> GetByUsersId(int UserId)
+        public async Task<Users> GetByUsersId(long UserId)
         {
             return await this.UserDbContent.Users.FirstOrDefaultAsync(t => t.Id == UserId);
         }
@@ -41,7 +41,7 @@ namespace TCNumberInquiry.Core.DataSources
             return requestAsync;
         }
 
-        public async Task<int> DeleteUsers(int usersid)
+        public async Task<int> DeleteUsers(long usersid)
         {
             var entity = this.UserDbContent.Users.FirstOrDefaultAsync(a => a.Id == usersid);
             this.UserDbContent.Remove(entity);
