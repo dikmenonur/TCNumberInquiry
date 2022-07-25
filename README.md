@@ -9,3 +9,16 @@ Redis Cache için kullanılacak.
 Docker Container kullanılacak, bunun için ilk oluşturnada bu adım seçildi.
 
 Net Core 5 api ve diğer katmanlar için kullanıldı.
+
+
+DB Schame
+
+| Id     | IdentyNumber | FirstName | LastName |BirthDate |IsActive |
+| :---   |    :---:     |      ---: | ---:     |     ---: |    ---: |
+| 1      | number       | string     | string     | datetime | boolen |   
+| 2      | 23123123       | Osman     | Sağ     | 01-02-1984     | true  |       
+
+
+
+
+![image](https://user-images.githubusercontent.com/3075597/180801000-ccecf74f-39c5-4cba-9761-98fc1a355f1b.png)
