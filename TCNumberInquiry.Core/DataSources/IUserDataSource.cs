@@ -10,6 +10,7 @@ namespace TCNumberInquiry.Core.DataSources
     public interface IUserDataSource
     {
         Task<Users> GetByUsersId(long UserId);
+        Task<Users> GetUserByIdentyNumber(long identyNumber);
         Task<List<Users>> GetAllUsers();
 
         Task<long> InsertUsers(Users users);

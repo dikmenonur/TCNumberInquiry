@@ -4,7 +4,7 @@ using TCNumberInquiry.Core.Entities;
 
 namespace TCNumberInquiry.Core.DataSources
 {
-    public interface IKpsRepository
+    public interface IKpsDataSource
     {
         Task<IdentificationNumberResponse> GetIdentificationNumberCheckAsync(IdentificationNumberRequest numberRequest);
     }

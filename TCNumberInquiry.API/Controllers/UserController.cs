@@ -41,13 +41,62 @@ namespace TCNumberInquiry.API.Controllers
 
         [Route("GetUserById")]
         [HttpGet]
-        [ProducesResponseType(typeof(ApiResponse<List<User>>), 200)]
+        [ProducesResponseType(typeof(ApiResponse<User>), 200)]
         public async Task<IActionResult> GetUserByIdModel(long userId)
         {
             try
             {
                 var users = await this._userManagers.GetUserById(userId);
                 return this.ApiResponse<User>(users);
+
+            }
+            catch (Exception ex)
+            {
+                return this.ApiErrorResponse(ex, "Beklenmedik hata meydana geldi.");
+            }
+        }
+
+        [Route("InsertUser")]
+        [HttpPost]
+        [ProducesResponseType(typeof(ApiResponse<long>), 200)]
+        public async Task<IActionResult> InsertUser(User user)
+        {
+            try
+            {
+                var usersCheck = await this._userManagers.CheckTCIndentificationNumber(user);
+
+                if (!usersCheck)
+                {
+                    return this.ApiResponse("Doğru bir TC Numarası giriniz. Böyle bir numara bulunamadı.");
+                }
+
+                var usersIdentyNumberCheck = await this._userManagers.GetUserByIdentyNumber(user.IdentyNumber);
+                
+                if (usersIdentyNumberCheck != null)
+                {
+                    return this.ApiResponse(usersIdentyNumberCheck, "Sistemde böyle bir kullanıcı mevcuttur.");
+                }
+
+                var users = await this._userManagers.InsertUser(user);
+                return this.ApiResponse(users);
+
+
+            }
+            catch (Exception ex)
+            {
+                return this.ApiErrorResponse(ex, "Beklenmedik hata meydana geldi.");
+            }
+        }
+
+        [Route("CheckTCIndentificationNumber")]
+        [HttpPost]
+        [ProducesResponseType(typeof(ApiResponse<long>), 200)]
+        public async Task<IActionResult> CheckTCIndentificationNumber(User user)
+        {
+            try
+            {
+                var users = await this._userManagers.CheckTCIndentificationNumber(user);
+                return this.ApiResponse(users);
 
             }
             catch (Exception ex)

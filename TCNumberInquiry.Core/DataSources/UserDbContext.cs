@@ -19,5 +19,14 @@ namespace TCNumberInquiry.Core.DataSources
         }
 
         public DbSet<Users> Users { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("public");
+            modelBuilder.Entity<Users>(entity =>
+            {
+                entity.HasKey(n => n.Id); 
+            });
+        }
     }
 }

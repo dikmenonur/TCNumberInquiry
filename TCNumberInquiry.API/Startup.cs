@@ -29,11 +29,27 @@ namespace TCNumberInquiry.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddTransient< IUserManagers, UserManagers>();
-            services.AddEntityFrameworkNpgsql().AddDbContext<UserDbContext>(dbOptions =>
+            var allowSpecificOrigins = "_myAllowSpecificOrigins";
+
+            services.AddCors(options =>
             {
-                dbOptions.UseNpgsql(Configuration.GetConnectionString("userdbsource"));
+                options.AddPolicy(name: allowSpecificOrigins,
+                    policy =>
+                    {
+                        policy.AllowAnyOrigin();
+                        policy.WithMethods("POST", "GET", "DELETE", "PUT");
+                    });
+            });
+
+
+            services.AddControllers();
+            services.AddTransient<IUserManagers, UserManagers>();
+            services.AddTransient<IUserDataSource, UserDataSource>();
+            services.AddTransient<IKpsDataSource, KpsDataSource>();
+            services.AddDistributedMemoryCache();
+            services.AddDbContext<UserDbContext>(dbOptions =>
+            {
+                dbOptions.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
             });
 
             services.AddSwaggerGen(c =>

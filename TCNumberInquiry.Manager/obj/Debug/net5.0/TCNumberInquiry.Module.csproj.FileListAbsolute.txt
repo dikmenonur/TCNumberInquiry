@@ -10,3 +10,6 @@ C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\ob
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.dll
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\ref\TCNumberInquiry.Module.dll
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.pdb
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\TCNumberInquiry.Core.dll
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\TCNumberInquiry.Core.pdb
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.csproj.CopyComplete

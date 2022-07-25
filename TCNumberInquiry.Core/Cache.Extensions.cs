@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Distributed;
-using TCNumberInquiry.Core.Entitiy;
+using TCNumberInquiry.Core.Entities;
 
 namespace TCNumberInquiry.Core
 {
-	public partial class Extensions
+	public static class Extensions
 	{
+		static bool CacheDisabled = false;
 		private class CacheEntry<T>
 		{
 			public long UpdatedOn { get; set; }

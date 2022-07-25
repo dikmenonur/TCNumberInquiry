@@ -17,14 +17,19 @@ namespace TCNumberInquiry.Core.DataSources
             this.UserDbContent = userDbContent;
         }
 
-        public async Task<Users> GetByUsersId(long UserId)
+        public async Task<Users> GetByUsersId(long userId)
         {
-            return await this.UserDbContent.Users.FirstOrDefaultAsync(t => t.Id == UserId);
+            return await this.UserDbContent.Users.FirstOrDefaultAsync(t => t.Id == userId && t.IsActive);
+        }
+
+        public async Task<Users> GetUserByIdentyNumber(long identyNumber)
+        {
+            return await this.UserDbContent.Users.FirstOrDefaultAsync(t => t.IdentyNumber == identyNumber);
         }
 
         public async Task<List<Users>> GetAllUsers()
         {
-            return await this.UserDbContent.Users.ToListAsync();
+            return await this.UserDbContent.Users.Where(t => t.IsActive).ToListAsync();
         }
 
         public async Task<long> InsertUsers(Users users)
@@ -41,10 +46,11 @@ namespace TCNumberInquiry.Core.DataSources
             return requestAsync;
         }
 
-        public async Task<int> DeleteUsers(long usersid)
+        public async Task<int> DeleteUsers(long userId)
         {
-            var entity = this.UserDbContent.Users.FirstOrDefaultAsync(a => a.Id == usersid);
-            this.UserDbContent.Remove(entity);
+            var entity = await this.UserDbContent.Users.FirstOrDefaultAsync(a => a.Id == userId);
+            entity.IsActive = false;
+            this.UserDbContent.Update<Users>(entity);
             return await this.UserDbContent.SaveChangesAsync();
         }
     }
