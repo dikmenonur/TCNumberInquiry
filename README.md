@@ -14,4 +14,12 @@ Net Core 5 api ve diğer katmanlar için kullanıldı.
 DB Schame
 Id	IdentyNumber	FirstName	LastName	BirthDate	IsActive
 1	*******	Onur	Dikmen	7/25/1983	TRUE
+
+| Id     | IdentyNumber | FirstName | LastName |BirthDate |IsActive |
+| 1      | ---       | ---     | ---     | ---     | false |   
+| 2      | `         |`         |`         |`         |`       |`   
+| 3     | \|        |`         |`         |`         |`         |
+
+
+
 ![image](https://user-images.githubusercontent.com/3075597/180801000-ccecf74f-39c5-4cba-9761-98fc1a355f1b.png)
