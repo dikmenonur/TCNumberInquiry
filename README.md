@@ -16,9 +16,10 @@ Id	IdentyNumber	FirstName	LastName	BirthDate	IsActive
 1	*******	Onur	Dikmen	7/25/1983	TRUE
 
 | Id     | IdentyNumber | FirstName | LastName |BirthDate |IsActive |
+| :---         |     :---:      |          ---: | ---: | ---: | ---: |
 | 1      | ---       | ---     | ---     | ---     | false |   
-| 2      | `         |`         |`         |`         |`       |`   
-| 3     | \|        |`         |`         |`         |`         |
+| 2      | ---       | ---     | ---     | ---     | true  |       
+
 
 
 
