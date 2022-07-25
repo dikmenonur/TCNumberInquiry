@@ -15,8 +15,8 @@ DB Schame
 
 | Id     | IdentyNumber | FirstName | LastName |BirthDate |IsActive |
 | :---   |    :---:     |      ---: | ---:     |     ---: |    ---: |
-| 1      | ---       | ---     | ---     | ---     | false |   
-| 2      | ---       | ---     | ---     | ---     | true  |       
+| 1      | number       | string     | string     | datetime | boolen |   
+| 2      | 23123123       | Osman     | Sağ     | 01-02-1984     | true  |       
 
 
 
