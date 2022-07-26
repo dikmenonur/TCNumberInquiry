@@ -22,3 +22,32 @@ DB Schame
 
 
 ![image](https://user-images.githubusercontent.com/3075597/180801000-ccecf74f-39c5-4cba-9761-98fc1a355f1b.png)
+
+
+Swagger Services Method
+![image](https://user-images.githubusercontent.com/3075597/180955492-5e4e2133-32bc-4bde-9308-b8a5f63eee5c.png)
+
+User List Schema
+```json
+{
+  "hasError": true,
+  "message": "string",
+  "validationErrors": [
+    {
+      "key": "string",
+      "errors": [
+        "string"
+      ]
+    }
+  ],
+  "data": [
+    {
+      "id": 0,
+      "identyNumber": 0,
+      "firstName": "string",
+      "lastName": "string",
+      "birthDate": "2022-07-26T08:20:18.323Z"
+    }
+  ]
+}
+```
