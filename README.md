@@ -28,6 +28,7 @@ Swagger Services Method
 ![image](https://user-images.githubusercontent.com/3075597/180955492-5e4e2133-32bc-4bde-9308-b8a5f63eee5c.png)
 
 User List Schema
+```json
 UserListApiResponse{
 hasError	boolean
 readOnly: true
@@ -53,3 +54,4 @@ nullable: true
 birthDate	string($date-time)
 }]
 }
+```
