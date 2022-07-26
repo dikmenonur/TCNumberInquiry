@@ -51,3 +51,12 @@ User List Schema
   ]
 }
 ```
+
+
+Yeni kullanıcı oluşturma sayfası
+![image](https://user-images.githubusercontent.com/3075597/180967968-0432c79e-906b-42e4-b052-7f7f1bf5c7d8.png)
+
+Kullanıcı Güncelleme sayfası
+![image](https://user-images.githubusercontent.com/3075597/180968230-c67169de-9f9f-4b1b-b6aa-4b25205ff1b2.png)
+
+
