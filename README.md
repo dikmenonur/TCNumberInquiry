@@ -22,3 +22,34 @@ DB Schame
 
 
 ![image](https://user-images.githubusercontent.com/3075597/180801000-ccecf74f-39c5-4cba-9761-98fc1a355f1b.png)
+
+
+Swagger Services Method
+![image](https://user-images.githubusercontent.com/3075597/180955492-5e4e2133-32bc-4bde-9308-b8a5f63eee5c.png)
+
+User List Schema
+UserListApiResponse{
+hasError	boolean
+readOnly: true
+message	string
+nullable: true
+readOnly: true
+validationErrors	[
+nullable: true
+ValidationErrorMessage{
+key	string
+nullable: true
+errors	[...]
+}]
+data	[
+nullable: true
+User{
+id	integer($int64)
+identyNumber	integer($int64)
+firstName	string
+nullable: true
+lastName	string
+nullable: true
+birthDate	string($date-time)
+}]
+}
