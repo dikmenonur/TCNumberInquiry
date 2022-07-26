@@ -40,3 +40,4 @@ C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\De
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.pdb
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.genruntimeconfig.cache
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.csproj.AssemblyReference.cache
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\Razor\Pages\CreateUser.cshtml.g.cs
