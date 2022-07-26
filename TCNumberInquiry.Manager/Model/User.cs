@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,13 @@ namespace TCNumberInquiry.Module.Model
         }
 
         public long Id { get; set; }
+        [Required,MaxLength(11)]
         public long IdentyNumber { get; set; }
+        [Required]
         public string FirstName { get; set; }
+        [Required]
         public string LastName { get; set; }
+        [Required,DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
 
         public Users GetUsers()

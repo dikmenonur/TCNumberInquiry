@@ -24,14 +24,14 @@ namespace TCNumberInquiry.Web.Pages
         public List<UserModel> UserModelList { get; set; }
         public async Task OnGetAsync()
         {
-            var userModelData = await this._userService.GetAllUsersAsync();
-            this.UserModelList = userModelData.UserModel;
+            var response = await this._userService.GetAllUsersAsync();
+            this.UserModelList = response.Data;
         }
 
         public async Task<IActionResult> OnGetEditAsync(long userId)
         {
-             await this._userService.GetUserByIdAsync(userId);
-             return RedirectToPage();
+            await this._userService.GetUserByIdAsync(userId);
+            return RedirectToPage();
         }
 
         public async Task<IActionResult> OnPostDeleteAsync(int id)

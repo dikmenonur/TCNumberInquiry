@@ -1,0 +1,15 @@
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\TCNumberInquiry.Module.deps.json
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\TCNumberInquiry.Module.dll
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\ref\TCNumberInquiry.Module.dll
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\TCNumberInquiry.Module.pdb
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\TCNumberInquiry.Core.dll
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\bin\Debug\net5.0\TCNumberInquiry.Core.pdb
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.csproj.AssemblyReference.cache
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.AssemblyInfoInputs.cache
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.AssemblyInfo.cs
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.csproj.CoreCompileInputs.cache
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.csproj.CopyComplete
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.dll
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\ref\TCNumberInquiry.Module.dll
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Manager\obj\Debug\net5.0\TCNumberInquiry.Module.pdb

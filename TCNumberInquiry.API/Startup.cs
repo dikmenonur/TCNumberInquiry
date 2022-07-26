@@ -41,7 +41,7 @@ namespace TCNumberInquiry.API
                     });
             });
 
-
+            services.AddHttpClient();
             services.AddControllers();
             services.AddTransient<IUserManagers, UserManagers>();
             services.AddTransient<IUserDataSource, UserDataSource>();

@@ -8,18 +8,6 @@ using System.Threading.Tasks;
 
 namespace TCNumberInquiry.Web.Model
 {
-    public class Data
-    {
-        [JsonProperty("data")]
-        public List<UserModel> UserModel { get; set; }
-        [JsonProperty("hasError")]
-        public bool HasError { get; set; }
-        [JsonProperty("message")]
-        public string Message { get; set; }
-        [JsonProperty("validationErrors")]
-        public string ValidationErrors { get; set; }
-    }
-
     public class UserModel
     {
         public UserModel()

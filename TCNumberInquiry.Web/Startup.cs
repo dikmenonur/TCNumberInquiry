@@ -24,6 +24,13 @@ namespace TCNumberInquiry.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient("TCNumberInquiryClient", config =>
+            {
+                config.BaseAddress = new Uri("https://localhost:5001/api/public/v1/");
+                config.Timeout = new TimeSpan(0, 0, 30);
+                config.DefaultRequestHeaders.Clear();
+            });
+
             services.AddRazorPages();
             services.AddTransient<UserServices>();
         }

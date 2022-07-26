@@ -25,9 +25,22 @@ namespace TCNumberInquiry.Web.Pages
 
         public async Task<IActionResult> OnGetAsync(long id)
         {
-            this.UserModel = await this._userService.GetUserByIdAsync(id);
+            var response = await this._userService.GetUserByIdAsync(id);
+            this.UserModel = response.Data;
 
             if (UserModel == null)
+            {
+                return NotFound();
+            }
+
+            return Page();
+        }
+
+        public async Task<IActionResult> OnPostAsync(UserModel userModel)
+        {
+            var apiResponse = await this._userService.UpdateUserAsync(userModel);
+
+            if (apiResponse == null)
             {
                 return NotFound();
             }

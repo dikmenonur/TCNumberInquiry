@@ -113,6 +113,23 @@ namespace TCNumberInquiry.API.Controllers
             }
         }
 
+        [Route("UpdateUser")]
+        [HttpPost]
+        [ProducesResponseType(typeof(ApiResponse<long>), 200)]
+        public async Task<IActionResult> UpdateUser(User user)
+        {
+            try
+            {
+                var userFound = await this._userManagers.UpdateUser(user);
+                return this.ApiResponse(userFound);
+
+            }
+            catch (Exception ex)
+            {
+                return this.ApiErrorResponse(ex, "Beklenmedik hata meydana geldi.");
+            }
+        }
+
         [Route("CheckTCIndentificationNumber")]
         [HttpPost]
         [ProducesResponseType(typeof(ApiResponse<long>), 200)]
