@@ -29,29 +29,25 @@ Swagger Services Method
 
 User List Schema
 ```json
-UserListApiResponse{
-hasError	boolean
-readOnly: true
-message	string
-nullable: true
-readOnly: true
-validationErrors	[
-nullable: true
-ValidationErrorMessage{
-key	string
-nullable: true
-errors	[...]
-}]
-data	[
-nullable: true
-User{
-id	integer($int64)
-identyNumber	integer($int64)
-firstName	string
-nullable: true
-lastName	string
-nullable: true
-birthDate	string($date-time)
-}]
+{
+  "hasError": true,
+  "message": "string",
+  "validationErrors": [
+    {
+      "key": "string",
+      "errors": [
+        "string"
+      ]
+    }
+  ],
+  "data": [
+    {
+      "id": 0,
+      "identyNumber": 0,
+      "firstName": "string",
+      "lastName": "string",
+      "birthDate": "2022-07-26T08:20:18.323Z"
+    }
+  ]
 }
 ```
