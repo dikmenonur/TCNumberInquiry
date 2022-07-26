@@ -13,6 +13,8 @@ namespace TCNumberInquiry.Web.Services
 {
     public class UserServices
     {
+
+
         private readonly string URLbase = "https://localhost:5001/api/public/v1/users";
         public async Task<Data> GetAllUsersAsync()
         {
@@ -32,7 +34,7 @@ namespace TCNumberInquiry.Web.Services
             UserModel users = new UserModel();
             using (var httpClient = new HttpClient())
             {
-                string URL = URLbase + "/GetUserByIdModel?userId=" + Id;
+                string URL = URLbase + "/GetUserById?userId=" + Id;
                 HttpResponseMessage response = await httpClient.GetAsync(URL);
                 string apiResponse = await response.Content.ReadAsStringAsync();
 
@@ -48,6 +50,18 @@ namespace TCNumberInquiry.Web.Services
             using (var httpClient = new HttpClient())
             {
                 StringContent content = new StringContent(JsonSerializer.Serialize(user), Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await httpClient.PostAsync(URL, content);
+                string apiResponse = await response.Content.ReadAsStringAsync();
+            }
+        }
+
+        public async Task DeleteUserAsync(long id)
+        {
+            string URL = URLbase + "/DeleteUser";
+
+            using (var httpClient = new HttpClient())
+            {
+                StringContent content = new StringContent(JsonSerializer.Serialize(id), Encoding.UTF8, "application/json");
                 HttpResponseMessage response = await httpClient.PostAsync(URL, content);
                 string apiResponse = await response.Content.ReadAsStringAsync();
             }

@@ -20,15 +20,24 @@ namespace TCNumberInquiry.Web.Pages
             this._userService = userService;
         }
 
-        public async Task<IEnumerable<UserModel>> GetAllUsersAsync()
+        [BindProperty]
+        public List<UserModel> UserModelList { get; set; }
+        public async Task OnGetAsync()
         {
             var userModelData = await this._userService.GetAllUsersAsync();
-            return userModelData.UserModel;
+            this.UserModelList = userModelData.UserModel;
         }
 
-        public async Task<UserModel> GetUserByIdAsync(long userId)
+        public async Task<IActionResult> OnGetEditAsync(long userId)
         {
-            return await this._userService.GetUserByIdAsync(userId);
+             await this._userService.GetUserByIdAsync(userId);
+             return RedirectToPage();
+        }
+
+        public async Task<IActionResult> OnPostDeleteAsync(int id)
+        {
+            await this._userService.DeleteUserAsync(id);
+            return RedirectToPage();
         }
     }
 }

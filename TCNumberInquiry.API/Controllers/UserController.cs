@@ -88,6 +88,31 @@ namespace TCNumberInquiry.API.Controllers
             }
         }
 
+        [Route("DeleteUser")]
+        [HttpPost]
+        [ProducesResponseType(typeof(ApiResponse<long>), 200)]
+        public async Task<IActionResult> DeleteUser(long userId)
+        {
+            try
+            {
+                var userFound = await this._userManagers.GetUserById(userId);
+
+                if (userFound != null)
+                {
+                    return this.ApiResponse(userFound, "Sistemde böyle bir kullanıcı mevcut değildir.");
+                }
+
+                var users = await this._userManagers.DeleteUser(userId);
+                return this.ApiResponse(users);
+
+
+            }
+            catch (Exception ex)
+            {
+                return this.ApiErrorResponse(ex, "Beklenmedik hata meydana geldi.");
+            }
+        }
+
         [Route("CheckTCIndentificationNumber")]
         [HttpPost]
         [ProducesResponseType(typeof(ApiResponse<long>), 200)]

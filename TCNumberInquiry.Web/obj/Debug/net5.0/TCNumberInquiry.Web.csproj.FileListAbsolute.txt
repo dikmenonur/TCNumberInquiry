@@ -9,7 +9,7 @@ C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\bin\De
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\bin\Debug\net5.0\TCNumberInquiry.Web.pdb
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\bin\Debug\net5.0\TCNumberInquiry.Web.Views.dll
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\bin\Debug\net5.0\TCNumberInquiry.Web.Views.pdb
-C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.csproj.AssemblyReference.cache
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.AssemblyInfoInputs.cache
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.AssemblyInfo.cs
@@ -23,6 +23,7 @@ C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\De
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.TagHelpers.input.cache
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.TagHelpers.output.cache
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.RazorCoreGenerate.cache
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\Razor\Pages\Edit.cshtml.g.cs
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
@@ -33,9 +34,8 @@ C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\De
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.RazorTargetAssemblyInfo.cache
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.RazorTargetAssemblyInfo.cs
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.Views.pdb
+C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.csproj.CopyComplete
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.dll
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\ref\TCNumberInquiry.Web.dll
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.pdb
 C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.genruntimeconfig.cache
-C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\obj\Debug\net5.0\TCNumberInquiry.Web.csproj.CopyComplete
-C:\Users\Onur Dikmen\source\repos\TCNumberInquiry.API\TCNumberInquiry.Web\bin\Debug\net5.0\Newtonsoft.Json.dll

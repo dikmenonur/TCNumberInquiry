@@ -1,8 +1,9 @@
-﻿@page
+﻿@page "{handler?}"
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
+
 <link href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css" rel="stylesheet" />
 
 <h1>User Result Page</h1>
@@ -18,19 +19,22 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in @Model.GetAllUsersAsync().Result)
+        @foreach (var item in @Model.UserModelList)
         {
             <tr>
                 <th scope="row">@item.Id</th>
                 <td>@item.FirstName</td>
                 <td>@item.LastName</td>
                 <td>@item.IdentyNumber</td>
-                <td><a data-value="@item.Id" href="javascript:void(0)" class="btnEdit">Edit</a></td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <button type="submit" asp-page-handler="delete" asp-route-id="@item.Id">delete</button>
+                </td>
             </tr>
         }
     </tbody>
     <tfoot>
-      
+
     </tfoot>
 </table>
 
@@ -58,8 +62,8 @@
                 modal: true,
                 open: function (event, ui) {
                     // Load partial view _GridEditPartial
-                    
-                    $(this).load("@Url.Action("Home/GetUserByIdAsync")", { userId: id });
+
+                    $(this).load("/index/UserAsync?userId=1");
                 },
                 buttons: {
                     "Close": function () {
